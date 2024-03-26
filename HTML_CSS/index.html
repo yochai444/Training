@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <title>ATLASSIAN_PROJECT</title>
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="topLeft">
+      <img id="atlassianLogo1" src="ATLASSIAN.jpg" alt="atlassian logo" />
+
+      <select name="Product" class="select" style="width: 80px">
+        <option selected disabled>Product</option>
+        <option value="Jira Software">Jira Software</option>
+        <option value="Jira Servvice Management">
+          Jira Servvice Management
+        </option>
+        <option value="Confluence">Confluence</option>
+        <option value="Trello">Trello</option>
+      </select>
+      <select name="Solution" class="select" style="width: 80px">
+        <option selected disabled>Solution</option>
+        <option value="Jira Servvice Management">
+          Jira Servvice Management
+        </option>
+        <option value="Confluence">Confluence</option>
+        <option value="Trello">Trello</option>
+      </select>
+      <select name="Resources" class="select" style="width: 80px">
+        <option selected disabled>Resources</option>
+        <option value="Jira Software">Jira Software</option>
+        <option value="Jira Servvice Management">
+          Jira Servvice Management
+        </option>
+        <option value="Confluence">Confluence</option>
+        <option value="Trello">Trello</option>
+      </select>
+    </div>
+
+    <div class="left">
+      <img id="atlassianLogo2" src="AS.jpg" ; alt="atlassian logo" />
+      <p style="font-size: 18px">
+        April 30 - May 2, 2024 | Las Vegas and digitally
+      </p>
+      <p style="font-size: 28px">
+        <b>
+          Be the first to see how AI is<br />
+          powering the Atlassian portfolio<br />
+          to drive acceleration, efficiency,<br />
+          and excellence.
+        </b>
+      </p>
+      <p style="font-size: 18">
+        For a limited time only, save over 45% on your<br />
+        conference pass.
+      </p>
+      <button id="button3">Register Now</button>
+    </div>
+
+    <div class="topRight">
+      <img id="search" src="serch.png" ; alt="search icon" />
+      <button id="button1">Try Now</button>
+      <button id="button2">Sign in</button>
+    </div>
+
+    <div class="right">
+      <video autoplay muted loop id="myVideo" width="400">
+        <source src="AT.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <div class="center">
+      <video id="video" width="320" height="240" controls>
+        <source src="AT.mp4" type="video/mp4" />
+      </video>
+
+      <div class="nearVideo">
+        <h style="font-size: 36"><b>Impossible Alone</b></h>
+        <p style="font-size: 18">
+          <b>See how collaboration makes the impossible, possible</b>
+        </p>
+        <img id="playLogo" src="play icon.png" alt="play logo" />
+        <a href="https://youtu.be/CTETwaQ1dqI?si=r4WePfmTUeWfwEtJ">
+          <button id="button4">Play video</button>
+        </a>
+      </div>
+
+      <div class="underVideo">
+        <h style="font-size: 36"
+          >Atlassian solutions are designed for all types of work</h
+        >
+        <div class="changePbutton">
+          <button id="WorkManagement" onclick="change_text1()">
+            Work Management
+          </button>
+          <button id="ItServviceManagement" onclick="change_text2()">
+            IT Servvice Management
+          </button>
+          <button id="AgileAndDevOps" onclick="change_text3()">
+            Agile And DevOps
+          </button>
+        </div>
+        <p id="demo" style="font-size: 24"></p>
+      </div>
+    </div>
+
+    <script>
+      function change_text1() {
+        document.getElementById("demo").innerHTML =
+          "Make work flow across teams <br> while connecting back to company <br> goals";
+      }
+      function change_text2() {
+        document.getElementById("demo").innerHTML =
+          "Enable your dev, IT ops, and <br> business teams to deliver great <br> service experiences";
+      }
+      function change_text3() {
+        document.getElementById("demo").innerHTML =
+          "Run a world-class agile software <br> company—from discovery to <br> delivery and operations";
+      }
+    </script>
+  </body>
+</html>
